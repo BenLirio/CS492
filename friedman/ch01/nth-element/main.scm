@@ -1,0 +1,5 @@
+(define (nth lst counter)
+  (if (= counter 0)
+      (cdr lst)
+      (nth (- counter 1) (cdr lst))))
+(nth '(1 2 3 4) 3)
